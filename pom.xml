@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.test</groupId>
-	<artifactId>testNGPracticeMavenProject</artifactId>
+	<artifactId>AmazonTestAutomationPOM</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>testNGPracticeMavenProject</name>
+	<name>AmazonTestAutomationPOM</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
