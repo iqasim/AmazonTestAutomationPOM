@@ -1,5 +1,9 @@
 package com.amazon.qa.testcases;
 
-public class LoginPageTest {
+import com.amazon.qa.base.TestBase;
+
+public class LoginPageTest extends TestBase {
+	
+	
 
 }

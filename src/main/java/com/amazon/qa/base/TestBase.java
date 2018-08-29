@@ -11,9 +11,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestBase {
 	
-	static WebDriver driver;
-	static Properties prop;
-	static FileInputStream fis;
+	public static WebDriver driver;
+	public static Properties prop;
+	public static FileInputStream fis;
 	
 	public static void init() throws IOException
 	{
@@ -31,8 +31,8 @@ public class TestBase {
 			driver = new ChromeDriver();
 		}
 		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("url"));
