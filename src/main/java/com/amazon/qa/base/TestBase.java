@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestBase {
 	
@@ -27,8 +28,8 @@ public class TestBase {
 		}
 		else if(prop.getProperty("browser").equals("firefox"))
 		{
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers//chromedriver.exe");
-			driver = new ChromeDriver();
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers//geckodriver.exe");
+			driver = new FirefoxDriver();
 		}
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -36,6 +37,11 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("url"));
+	}
+	
+	public static void closeBrowsers()
+	{
+		driver.quit();
 	}
 
 }
