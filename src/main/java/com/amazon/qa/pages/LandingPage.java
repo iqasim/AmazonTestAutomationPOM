@@ -35,13 +35,8 @@ public class LandingPage extends TestBase {
 	
 	public LoginPage clickSignInButton()
 	{
-		System.out.println(SignInButton.getText());
-		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		jse.executeScript("arguments[0].click", SignInButton);
-		
-	/*	Actions action = new Actions(driver);
+		Actions action = new Actions(driver);
 		action.moveToElement(navArrow).click().perform();
-		action.moveToElement(SignInButton).click().perform();*/
 		return new LoginPage();
 	}
 	

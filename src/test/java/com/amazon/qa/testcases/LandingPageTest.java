@@ -2,21 +2,29 @@ package com.amazon.qa.testcases;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.amazon.qa.base.TestBase;
 import com.amazon.qa.pages.LandingPage;
+import com.amazon.qa.pages.LoginPage;
 
 public class LandingPageTest extends TestBase {
 	
-	LandingPage lp = new LandingPage();
+	LandingPage lp;
+	LoginPage logPage;
+	
+	public LandingPageTest(){
+		super();
+	}
 
 	@BeforeMethod
 	public void setUp() throws IOException
 	{
 		init();
+		lp = new LandingPage();
 	}
 	
 	@AfterMethod
@@ -26,15 +34,16 @@ public class LandingPageTest extends TestBase {
 	}
 	
 	@Test
-	public void LandingPageTitleTest()
+	public void testLandingPageTitle()
 	{
-		System.out.println(lp.getLandingPageTitle());
+		String title = lp.getLandingPageTitle();
+		Assert.assertEquals(title, "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
 	}
 	
 	@Test
 	public void testNavigationToLoginPage()
 	{
-		lp.clickSignInButton();
+		logPage = lp.clickSignInButton();
 	}
 	
 	

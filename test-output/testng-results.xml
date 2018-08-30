@@ -1,69 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24608" started-at="2018-08-29T13:21:11Z" finished-at="2018-08-29T13:21:36Z">
+  <suite name="Default suite" duration-ms="24185" started-at="2018-08-30T10:15:24Z" finished-at="2018-08-30T10:15:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24608" started-at="2018-08-29T13:21:11Z" finished-at="2018-08-29T13:21:36Z">
+    <test name="Default test" duration-ms="24185" started-at="2018-08-30T10:15:24Z" finished-at="2018-08-30T10:15:48Z">
       <class name="com.amazon.qa.testcases.LandingPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@727803de]" name="setUp" is-config="true" duration-ms="10683" started-at="2018-08-29T13:21:11Z" finished-at="2018-08-29T13:21:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@eafc191]" name="setUp" is-config="true" duration-ms="9816" started-at="2018-08-30T10:15:24Z" finished-at="2018-08-30T10:15:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="LandingPageTitleTest()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@727803de]" name="LandingPageTitleTest" duration-ms="25" started-at="2018-08-29T13:21:22Z" finished-at="2018-08-29T13:21:22Z">
+        <test-method status="PASS" signature="testLandingPageTitle()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@eafc191]" name="testLandingPageTitle" duration-ms="120" started-at="2018-08-30T10:15:34Z" finished-at="2018-08-30T10:15:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LandingPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@727803de]" name="tearDown" is-config="true" duration-ms="2341" started-at="2018-08-29T13:21:22Z" finished-at="2018-08-29T13:21:24Z">
+        </test-method> <!-- testLandingPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@eafc191]" name="tearDown" is-config="true" duration-ms="2022" started-at="2018-08-30T10:15:34Z" finished-at="2018-08-30T10:15:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@727803de]" name="setUp" is-config="true" duration-ms="9469" started-at="2018-08-29T13:21:24Z" finished-at="2018-08-29T13:21:34Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@eafc191]" name="setUp" is-config="true" duration-ms="8078" started-at="2018-08-30T10:15:36Z" finished-at="2018-08-30T10:15:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testNavigationToLoginPage()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@727803de]" name="testNavigationToLoginPage" duration-ms="2" started-at="2018-08-29T13:21:34Z" finished-at="2018-08-29T13:21:34Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy7.getText(Unknown Source)
-at com.amazon.qa.pages.LandingPage.clickSignInButton(LandingPage.java:38)
-at com.amazon.qa.testcases.LandingPageTest.testNavigationToLoginPage(LandingPageTest.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="testNavigationToLoginPage()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@eafc191]" name="testNavigationToLoginPage" duration-ms="830" started-at="2018-08-30T10:15:44Z" finished-at="2018-08-30T10:15:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNavigationToLoginPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@727803de]" name="tearDown" is-config="true" duration-ms="2062" started-at="2018-08-29T13:21:34Z" finished-at="2018-08-29T13:21:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@eafc191]" name="tearDown" is-config="true" duration-ms="3290" started-at="2018-08-30T10:15:45Z" finished-at="2018-08-30T10:15:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
