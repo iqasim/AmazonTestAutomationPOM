@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Amazon Test Automation Suite">
+  <!-- <listeners>
+  	<listener class-name= "Analyzer.annotationTransform"/>
+  </listeners> -->
+  <test name="Regression Suite">
+  <!-- <parameter name = "browser" value = "chrome"/>
+  <parameter name = "url" value = "https://in.yahoo.com/?p=us"/>
+  <parameter name = "emailID" value = "test@gmail.com"/> -->
+    <classes>
+      <class name="com.amazon.qa.testcases.LandingPageTest"/>
+      <class name="com.amazon.qa.testcases.LoginPageTest"/>
+    </classes>
+  </test> 
+</suite>

@@ -27,12 +27,6 @@ public class LandingPageTest extends TestBase {
 		lp = new LandingPage();
 	}
 	
-	@AfterMethod
-	public void tearDown()
-	{
-		closeBrowsers();
-	}
-	
 	@Test
 	public void testLandingPageTitle()
 	{
@@ -46,8 +40,11 @@ public class LandingPageTest extends TestBase {
 		logPage = lp.clickSignInButton();
 	}
 	
-	
-	
+	@AfterMethod
+	public void tearDown()
+	{
+		closeBrowsers();
+	}	
 	
 }
 

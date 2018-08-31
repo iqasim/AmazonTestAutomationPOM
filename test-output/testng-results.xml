@@ -1,37 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24185" started-at="2018-08-30T10:15:24Z" finished-at="2018-08-30T10:15:48Z">
+  <suite name="Amazon Test Automation Suite" duration-ms="103851" started-at="2018-08-31T03:58:47Z" finished-at="2018-08-31T04:00:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24185" started-at="2018-08-30T10:15:24Z" finished-at="2018-08-30T10:15:48Z">
+    <test name="Regression Suite" duration-ms="103851" started-at="2018-08-31T03:58:47Z" finished-at="2018-08-31T04:00:31Z">
       <class name="com.amazon.qa.testcases.LandingPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@eafc191]" name="setUp" is-config="true" duration-ms="9816" started-at="2018-08-30T10:15:24Z" finished-at="2018-08-30T10:15:34Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@1060b431]" name="setUp" is-config="true" duration-ms="23441" started-at="2018-08-31T03:58:47Z" finished-at="2018-08-31T03:59:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testLandingPageTitle()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@eafc191]" name="testLandingPageTitle" duration-ms="120" started-at="2018-08-30T10:15:34Z" finished-at="2018-08-30T10:15:34Z">
+        <test-method status="PASS" signature="testLandingPageTitle()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@1060b431]" name="testLandingPageTitle" duration-ms="75" started-at="2018-08-31T03:59:11Z" finished-at="2018-08-31T03:59:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLandingPageTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@eafc191]" name="tearDown" is-config="true" duration-ms="2022" started-at="2018-08-30T10:15:34Z" finished-at="2018-08-30T10:15:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@1060b431]" name="tearDown" is-config="true" duration-ms="1069" started-at="2018-08-31T03:59:11Z" finished-at="2018-08-31T03:59:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@eafc191]" name="setUp" is-config="true" duration-ms="8078" started-at="2018-08-30T10:15:36Z" finished-at="2018-08-30T10:15:44Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@1060b431]" name="setUp" is-config="true" duration-ms="16289" started-at="2018-08-31T03:59:12Z" finished-at="2018-08-31T03:59:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testNavigationToLoginPage()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@eafc191]" name="testNavigationToLoginPage" duration-ms="830" started-at="2018-08-30T10:15:44Z" finished-at="2018-08-30T10:15:45Z">
+        <test-method status="PASS" signature="testNavigationToLoginPage()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@1060b431]" name="testNavigationToLoginPage" duration-ms="2285" started-at="2018-08-31T03:59:28Z" finished-at="2018-08-31T03:59:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNavigationToLoginPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@eafc191]" name="tearDown" is-config="true" duration-ms="3290" started-at="2018-08-30T10:15:45Z" finished-at="2018-08-30T10:15:48Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@1060b431]" name="tearDown" is-config="true" duration-ms="906" started-at="2018-08-31T03:59:30Z" finished-at="2018-08-31T03:59:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.amazon.qa.testcases.LandingPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.amazon.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.LoginPageTest@612679d6]" name="setUp" is-config="true" duration-ms="23132" started-at="2018-08-31T03:59:31Z" finished-at="2018-08-31T03:59:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.amazon.qa.testcases.LoginPageTest@612679d6]" name="testLogin" duration-ms="7870" started-at="2018-08-31T03:59:55Z" finished-at="2018-08-31T04:00:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.LoginPageTest@612679d6]" name="tearDown" is-config="true" duration-ms="957" started-at="2018-08-31T04:00:02Z" finished-at="2018-08-31T04:00:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.LoginPageTest@612679d6]" name="setUp" is-config="true" duration-ms="26854" started-at="2018-08-31T04:00:03Z" finished-at="2018-08-31T04:00:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLoginPageTitle()[pri:0, instance:com.amazon.qa.testcases.LoginPageTest@612679d6]" name="testLoginPageTitle" duration-ms="19" started-at="2018-08-31T04:00:30Z" finished-at="2018-08-31T04:00:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.LoginPageTest@612679d6]" name="tearDown" is-config="true" duration-ms="906" started-at="2018-08-31T04:00:30Z" finished-at="2018-08-31T04:00:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon.qa.testcases.LoginPageTest -->
+    </test> <!-- Regression Suite -->
+  </suite> <!-- Amazon Test Automation Suite -->
 </testng-results>
