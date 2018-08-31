@@ -27,7 +27,7 @@ public class LoginPageTest extends TestBase {
 		init();
 		lp = new LoginPage();
 		landPage = new LandingPage();
-		landPage.clickSignInButton();
+		landPage.navigateToLoginPage();
 	}
 	
 	@Test

@@ -37,7 +37,7 @@ public class LandingPageTest extends TestBase {
 	@Test
 	public void testNavigationToLoginPage()
 	{
-		logPage = lp.clickSignInButton();
+		logPage = lp.navigateToLoginPage();
 	}
 	
 	@AfterMethod

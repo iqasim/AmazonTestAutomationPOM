@@ -36,21 +36,34 @@ public class LoginPage extends TestBase {
 		username.sendKeys(prop.getProperty("username"));
 	}
 	
+	public void clickContinueButton()
+	{
+		continueButton.click();
+	}
+	
 	public void enterPassword()
 	{
 		password.clear();
 		password.sendKeys(prop.getProperty("password"));
 	}
 	
-	public void clickContinueButton()
-	{
-		continueButton.click();
-	}
 	
 	public LandingPage clickLoginButton()
 	{
 		loginButton.click();
 		return new LandingPage();
 	}
+	
+	public LandingPage login()
+	{
+		username.clear();
+		username.sendKeys(prop.getProperty("username"));
+		continueButton.click();
+		password.clear();
+		password.sendKeys(prop.getProperty("password"));
+		loginButton.click();
+		return new LandingPage();
+	}
+	
 
 }

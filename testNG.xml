@@ -12,6 +12,7 @@
     <classes>
       <class name="com.amazon.qa.testcases.LandingPageTest"/>
       <class name="com.amazon.qa.testcases.LoginPageTest"/>
+      <class name="com.amazon.qa.testcases.SearchResultsPageTest"/>
     </classes>
   </test> 
 </suite>

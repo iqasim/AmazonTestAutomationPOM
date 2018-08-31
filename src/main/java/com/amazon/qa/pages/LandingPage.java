@@ -18,6 +18,15 @@ public class LandingPage extends TestBase {
 	@FindBy(xpath = "//div[@id='nav-flyout-ya-signin']//child::span[@class='nav-action-inner']")
 	WebElement SignInButton;
 	
+	@FindBy(xpath = "twotabsearchtextbox")
+	WebElement searchTextbox;
+	
+	@FindBy(xpath = "//input[@class='nav-input' and @value='Go']")
+	WebElement searchButton;
+	
+	
+	
+	
 	public LandingPage()
 	{
 		PageFactory.initElements(driver, this);
@@ -33,11 +42,23 @@ public class LandingPage extends TestBase {
 		navArrow.click();
 	}
 	
-	public LoginPage clickSignInButton()
+	public LoginPage navigateToLoginPage()
 	{
 		Actions action = new Actions(driver);
 		action.moveToElement(navArrow).click().perform();
 		return new LoginPage();
+	}
+	
+	public void enterSearchCriteria(String searchCriteria)
+	{
+		searchTextbox.clear();
+		searchTextbox.sendKeys(searchCriteria);
+	}
+	
+	public SearchResultsPage clickOnSearchButton()
+	{
+		searchButton.click();
+		return new SearchResultsPage();
 	}
 	
 }
