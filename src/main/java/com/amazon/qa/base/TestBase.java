@@ -9,12 +9,18 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.events.WebDriverEventListener;
+
+import com.amazon.qa.utilities.WebEventListener;
 
 public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties prop;
 	public static FileInputStream fis;
+	public static WebEventListener eventListener;
+	public static EventFiringWebDriver eventFiringListener;
 	
 	public static void init() throws IOException
 	{
@@ -32,6 +38,15 @@ public class TestBase {
 			driver = new FirefoxDriver();
 		}
 		
+		//Creating object of EventFiringWebDriver 
+		eventFiringListener = new EventFiringWebDriver(driver);
+		//Creating object of WebEventListener TestUtil
+		eventListener = new WebEventListener();
+		//Register the WebEventListener TestUtil
+		eventFiringListener.register(eventListener);
+		//Assign event firing listener to driver
+		driver = eventFiringListener;
+			
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();

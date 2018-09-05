@@ -5,8 +5,8 @@
     <classes>
       <class name="com.amazon.qa.testcases.SearchResultsPageTest">
         <methods>
-          <include name="testSearchFeature"/>
           <include name="setUp"/>
+          <include name="testSearchResultsBreadcrumb"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- com.amazon.qa.testcases.SearchResultsPageTest -->
