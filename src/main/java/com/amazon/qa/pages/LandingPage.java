@@ -18,7 +18,7 @@ public class LandingPage extends TestBase {
 	@FindBy(xpath = "//div[@id='nav-flyout-ya-signin']//child::span[@class='nav-action-inner']")
 	WebElement SignInButton;
 	
-	@FindBy(xpath = "twotabsearchtextbox")
+	@FindBy(xpath = "//input[@id='twotabsearchtextbox']")
 	WebElement searchTextbox;
 	
 	@FindBy(xpath = "//input[@class='nav-input' and @value='Go']")

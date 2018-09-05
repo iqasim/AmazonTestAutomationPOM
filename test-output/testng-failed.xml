@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Amazon Test Automation Suite]">
+  <test thread-count="5" name="Regression Suite(failed)">
     <classes>
       <class name="com.amazon.qa.testcases.SearchResultsPageTest">
         <methods>
           <include name="testSortResultsByLowToHighPrice"/>
           <include name="setUp"/>
-          <include name="testSearchResultsBreadcrumb"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- com.amazon.qa.testcases.SearchResultsPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Regression Suite(failed) -->
+</suite> <!-- Failed suite [Amazon Test Automation Suite] -->

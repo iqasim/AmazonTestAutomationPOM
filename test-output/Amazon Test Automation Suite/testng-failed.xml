@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Amazon Test Automation Suite]">
   <test thread-count="5" name="Regression Suite(failed)">
     <classes>
-      <class name="com.amazon.qa.testcases.LoginPageTest">
+      <class name="com.amazon.qa.testcases.SearchResultsPageTest">
         <methods>
-          <include name="testLogin"/>
+          <include name="testSortResultsByLowToHighPrice"/>
           <include name="setUp"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.amazon.qa.testcases.LoginPageTest -->
+      </class> <!-- com.amazon.qa.testcases.SearchResultsPageTest -->
     </classes>
   </test> <!-- Regression Suite(failed) -->
 </suite> <!-- Failed suite [Amazon Test Automation Suite] -->
