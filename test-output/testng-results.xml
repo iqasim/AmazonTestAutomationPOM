@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26838" started-at="2018-09-05T09:57:13Z" finished-at="2018-09-05T09:57:39Z">
+  <suite name="Amazon Test Automation Suite" duration-ms="49401" started-at="2018-09-05T13:50:27Z" finished-at="2018-09-05T13:51:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26838" started-at="2018-09-05T09:57:13Z" finished-at="2018-09-05T09:57:39Z">
-      <class name="com.amazon.qa.testcases.SearchResultsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.SearchResultsPageTest@4a87761d]" name="setUp" is-config="true" duration-ms="15919" started-at="2018-09-05T09:57:13Z" finished-at="2018-09-05T09:57:28Z">
+    <test name="Regression Suite" duration-ms="49401" started-at="2018-09-05T13:50:27Z" finished-at="2018-09-05T13:51:16Z">
+      <class name="com.amazon.qa.testcases.LandingPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@37374a5e]" name="setUp" is-config="true" duration-ms="23631" started-at="2018-09-05T13:50:27Z" finished-at="2018-09-05T13:50:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSearchResultsBreadcrumb()[pri:0, instance:com.amazon.qa.testcases.SearchResultsPageTest@4a87761d]" name="testSearchResultsBreadcrumb" duration-ms="8248" started-at="2018-09-05T09:57:28Z" finished-at="2018-09-05T09:57:37Z">
+        <test-method status="PASS" signature="testLandingPageTitle()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@37374a5e]" name="testLandingPageTitle" duration-ms="135" started-at="2018-09-05T13:50:50Z" finished-at="2018-09-05T13:50:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchResultsBreadcrumb -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.amazon.qa.testcases.SearchResultsPageTest@4a87761d]" name="teardown" is-config="true" duration-ms="2649" started-at="2018-09-05T09:57:37Z" finished-at="2018-09-05T09:57:39Z">
+        </test-method> <!-- testLandingPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@37374a5e]" name="tearDown" is-config="true" duration-ms="3354" started-at="2018-09-05T13:50:50Z" finished-at="2018-09-05T13:50:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.amazon.qa.testcases.SearchResultsPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@37374a5e]" name="setUp" is-config="true" duration-ms="10469" started-at="2018-09-05T13:50:54Z" finished-at="2018-09-05T13:51:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testNavigationToLoginPage()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@37374a5e]" name="testNavigationToLoginPage" duration-ms="7732" started-at="2018-09-05T13:51:04Z" finished-at="2018-09-05T13:51:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationToLoginPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@37374a5e]" name="tearDown" is-config="true" duration-ms="4056" started-at="2018-09-05T13:51:12Z" finished-at="2018-09-05T13:51:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon.qa.testcases.LandingPageTest -->
+    </test> <!-- Regression Suite -->
+  </suite> <!-- Amazon Test Automation Suite -->
 </testng-results>
