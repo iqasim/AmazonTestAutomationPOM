@@ -7,7 +7,6 @@
         <methods>
           <include name="testSortResultsByLowToHighPrice"/>
           <include name="setUp"/>
-          <include name="testSearchResultsBreadcrumb"/>
         </methods>
       </class> <!-- com.amazon.qa.testcases.SearchResultsPageTest -->
     </classes>
