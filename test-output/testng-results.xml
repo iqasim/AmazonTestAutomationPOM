@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Amazon Test Automation Suite" duration-ms="49401" started-at="2018-09-05T13:50:27Z" finished-at="2018-09-05T13:51:16Z">
+  <suite name="Default suite" duration-ms="14953" started-at="2018-09-06T07:56:05Z" finished-at="2018-09-06T07:56:20Z">
     <groups>
     </groups>
-    <test name="Regression Suite" duration-ms="49401" started-at="2018-09-05T13:50:27Z" finished-at="2018-09-05T13:51:16Z">
-      <class name="com.amazon.qa.testcases.LandingPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@37374a5e]" name="setUp" is-config="true" duration-ms="23631" started-at="2018-09-05T13:50:27Z" finished-at="2018-09-05T13:50:50Z">
+    <test name="Default test" duration-ms="14953" started-at="2018-09-06T07:56:05Z" finished-at="2018-09-06T07:56:20Z">
+      <class name="com.amazon.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.LoginPageTest@2e3fc542]" name="setUp" is-config="true" duration-ms="11091" started-at="2018-09-06T07:56:05Z" finished-at="2018-09-06T07:56:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testLandingPageTitle()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@37374a5e]" name="testLandingPageTitle" duration-ms="135" started-at="2018-09-05T13:50:50Z" finished-at="2018-09-05T13:50:50Z">
+        <test-method status="PASS" signature="testLoginPageTitle()[pri:0, instance:com.amazon.qa.testcases.LoginPageTest@2e3fc542]" name="testLoginPageTitle" duration-ms="22" started-at="2018-09-06T07:56:16Z" finished-at="2018-09-06T07:56:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLandingPageTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@37374a5e]" name="tearDown" is-config="true" duration-ms="3354" started-at="2018-09-05T13:50:50Z" finished-at="2018-09-05T13:50:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@37374a5e]" name="setUp" is-config="true" duration-ms="10469" started-at="2018-09-05T13:50:54Z" finished-at="2018-09-05T13:51:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testNavigationToLoginPage()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@37374a5e]" name="testNavigationToLoginPage" duration-ms="7732" started-at="2018-09-05T13:51:04Z" finished-at="2018-09-05T13:51:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNavigationToLoginPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.LandingPageTest@37374a5e]" name="tearDown" is-config="true" duration-ms="4056" started-at="2018-09-05T13:51:12Z" finished-at="2018-09-05T13:51:16Z">
+        </test-method> <!-- testLoginPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.LoginPageTest@2e3fc542]" name="tearDown" is-config="true" duration-ms="3818" started-at="2018-09-06T07:56:16Z" finished-at="2018-09-06T07:56:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.amazon.qa.testcases.LandingPageTest -->
-    </test> <!-- Regression Suite -->
-  </suite> <!-- Amazon Test Automation Suite -->
+      </class> <!-- com.amazon.qa.testcases.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

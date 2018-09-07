@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,6 +22,8 @@ public class TestBase {
 	public static FileInputStream fis;
 	public static WebEventListener eventListener;
 	public static EventFiringWebDriver eventFiringListener;
+	public static Logger log;
+	
 	
 	public static void init() throws IOException
 	{
