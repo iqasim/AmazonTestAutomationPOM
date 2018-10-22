@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.amazon.qa.base.TestBase;
+import com.amazon.qa.utilities.EncoderDecoder;
 
 public class LoginPage extends TestBase {
 	
@@ -43,10 +44,16 @@ public class LoginPage extends TestBase {
 		continueButton.click();
 	}
 	
-	public void enterPassword()
+	/*public void enterPassword()
 	{
 		password.clear();
 		password.sendKeys(prop.getProperty("password"));
+	}*/
+	
+	public void enterPassword()
+	{
+		password.clear();
+		password.sendKeys(EncoderDecoder.encodePassword(prop.getProperty("password")));
 	}
 	
 	
